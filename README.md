@@ -4,5 +4,5 @@
 <p>배변활동을 분석하여 사용자에게 맞춤형 피드백을 제공하는 서비스</p>
 
 ### 사용 스택
-Front - HTML, CSS, JS
+Front - HTML, CSS, JS <br>
 Back - Django
