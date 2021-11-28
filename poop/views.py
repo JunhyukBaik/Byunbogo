@@ -8,6 +8,7 @@ def home(request):
     """
     메인 페이지
     """
+    3/0
     return render(request, 'index.html')
 
 def QnA(request):
