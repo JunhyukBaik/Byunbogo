@@ -60,8 +60,3 @@ def question_create(request):
     context = {'form': form}
     return render(request, 'poop/question_form.html', context)
 
-def page_not_found(request, exception):
-    """
-    404 Page not found
-    """
-    return render(request, 'common/404.html', {})
