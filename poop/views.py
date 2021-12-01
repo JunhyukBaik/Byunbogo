@@ -59,4 +59,3 @@ def question_create(request):
         form = QuestionForm()
     context = {'form': form}
     return render(request, 'poop/question_form.html', context)
-

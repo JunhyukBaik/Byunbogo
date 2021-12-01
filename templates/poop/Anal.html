@@ -27,7 +27,7 @@
 									<div id="menu">
 										<ul>
 											<li><a href="/">Home</a></li>
-											<li><a href="">Q&A</a></li>
+											<li><a href="Q&A/">Q&A</a></li>
 											<li><a href="#">Sign Up</a></li>
 											<li><a href="#">Log In</a></li>
 										</ul>
@@ -40,43 +40,20 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Q&A Page</h2>
-							<p>궁금한점이 있다면 무엇이든지 물어보세요</p>
+							<h2>분석 결과</h2>
+							<p>분석 결과를 참고하여 건강을 관리하세요</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
-								<section>
-									<h4>질문</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>No.</th>
-													<th>Subject</th>
-													<th>Date</th>
-												</tr>
-											</thead>
-											<tbody>
-                                                {% if question_list %}
-                                                {% for question in question_list %}
-                                                <tr>
-                                                    <td>{{ forloop.counter }}</td>
-                                                    <td>
-                                                        <a href="{% url 'poop:detail' question.id %}">{{ question.subject }}</a>
-                                                    </td>
-                                                    <td>{{ question.create_date }}</td>
-                                                </tr>
-                                                {% endfor %}
-                                                {% else %}
-                                                <tr>
-                                                    <td colspan="3">질문이 없습니다.</td>
-                                                </tr>
-                                                {% endif %}
-                                            </tbody>
-										</table>
-                                    <a href="{%  url 'poop:question_create' %}" class="button primary small">질문등록하기</a>
-									</div>
-                                </section>
+								<h3>대장 이상</h3>
+								<p>대변의 형태와 색깔을 분석한 결과, 혈변과 변의 굵기가 가늘어 진 것을 발견했습니다.</br>
+									시급히 병원에 방문하여 검사를 받아보는 것을 추천드립니다.
+								</p>
+								<hr />
+								<h3>당뇨 의심</h3>
+								<p>소변패턴과 소변의 형태를 분석한 결과, 일일 소변횟수가 10회 이상에 거품양이 많은 것을 확인했습니다.</br>
+									시급히 병원에 방문하여 검사를 받아보는 것을 추천드립니다.
+								</p>
 							</div>
 						</section>
 					</article>
@@ -91,7 +68,7 @@
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; 변보고</li><li>Tel: <a href="#">+82-10-5213-1708</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 
