@@ -18,6 +18,12 @@ def QnA(request):
     context = {'question_list': question_list}
     return render(request, 'poop/question_list.html', context)
 
+def Anal(request):
+    """
+    분석 페이지
+    """
+    return render(request, 'poop/Anal.html')
+
 def detail(request, question_id):
     """
     Q&A 내용 출력
